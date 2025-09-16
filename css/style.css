@@ -1,0 +1,116 @@
+/* ============================= */
+/* Saltar al contenido principal */
+/* ============================= */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* ============================= */
+/* Estilo general del body */
+/* ============================= */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* ============================= */
+/* Header y navegación */
+/* ============================= */
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Nav con inline-block y ancho 80% */
+.main-nav {
+  display: inline-block;
+  width: 80%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Comentamos cualquier estilo anterior de li */
+/* li {
+  margin: 10px;
+} */
+
+/* Selector descendente: solo imagen dentro de nav */
+.main-nav img.nav-img {
+  width: 10%;
+  position: relative;
+  top: 20px;
+}
+
+/* Estilo de lista de navegación */
+.main-nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.main-nav li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* ============================= */
+/* Grid: dos columnas (~40%) */
+/* ============================= */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: start;
+  row-gap: 20px;
+  column-gap: 20px;
+  margin: 20px auto;
+}
+
+/* Solo imágenes dentro de grid */
+.grid img {
+  width: 100%;
+  display: block;
+}
+
+/* ============================= */
+/* Flex: filas con wrap */
+/* ============================= */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 20px auto;
+}
+
+/* Solo imágenes dentro de flex */
+.flex img {
+  width: 30%;
+  display: block;
+}
+
+/* ============================= */
+/* Footer */
+/* ============================= */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  margin-top: 20px;
+}
